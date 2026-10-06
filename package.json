@@ -1,0 +1,9 @@
+{
+  "name": "transcribe",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js", "test": "node --test" },
+  "dependencies": { "express": "5.1.0", "pdfkit": "0.17.2", "youtube-transcript-plus": "2.0.3" }
+}
