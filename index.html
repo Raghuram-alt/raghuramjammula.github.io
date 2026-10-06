@@ -1,2 +1,57 @@
-<h1> raghu had intrest in cricket</h1>
-<img src="virat.jpeg"></img>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fafaf7">
+  <meta name="description" content="Turn YouTube videos into words worth keeping. Read transcripts, find the key ideas, and share a little knowledge.">
+  <title>transcribe — Good ideas deserve to be read.</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="header">
+      <a class="wordmark" href="/" aria-label="transcribe home"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>transcribe<span class="brand-dot">.</span></a>
+      <nav class="primary-nav" aria-label="Main navigation"><a href="#discover" class="nav-explore">Explore</a><button data-open="how-dialog">How it works</button><button data-open="api-dialog" class="api-nav">For developers <span>↗</span></button></nav>
+      <a class="header-cta" href="#transcribe-form">Start transcribing <span>↗</span></a>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="eyebrow"><span class="live-dot"></span> LESS WATCHING. MORE UNDERSTANDING.</div>
+        <h1 id="hero-heading">Good ideas deserve<br>to be <em>read.<svg class="headline-flourish" viewBox="0 0 140 15" aria-hidden="true"><path d="M3 10 Q65 -1 135 7 M23 14 Q79 6 120 11"/></svg></em></h1>
+        <p class="hero-description">Turn any YouTube video into a transcript, a clear summary,<br class="desktop-break"> and a link worth sharing. Make a little more of what you watch.</p>
+        <div class="transcribe-box">
+          <form id="transcribe-form" novalidate>
+            <label class="sr-only" for="video-url">YouTube video URL</label>
+            <svg class="youtube-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="m10 9 5 3-5 3V9Z" fill="currentColor"/></svg>
+            <input id="video-url" name="url" type="url" placeholder="Paste a YouTube link here…" autocomplete="off" spellcheck="false" aria-describedby="form-error form-note" required>
+            <button class="primary-button" id="submit-button" type="submit"><span>Transcribe</span><span aria-hidden="true">↗</span></button>
+          </form>
+          <div class="form-error" id="form-error" role="alert" hidden></div>
+          <div class="form-bottom" id="form-note"><div class="form-details"><span><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.8"/><path d="M8 4.5V8l2.5 1.5"/></svg> Videos up to 90 minutes</span><span class="detail-separator">·</span><span>No account needed</span></div><button class="example-button" id="try-example">Try an example <span>↗</span></button></div>
+        </div>
+        <div class="benefits"><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2h6l3 3v9H3V2h1Zm5 0v4h4M5.5 9h5M5.5 11.5h4"/></svg> The full transcript</span><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m8 1 1.7 4.8L14 8l-4.3 1.8L8 15l-1.8-5.2L2 8l4.2-2.2L8 1Z"/></svg> The key takeaways</span><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 10 4-4M6.5 5.5 8 4c4-4 8 0 4 4l-1.5 1.5m-1 1L8 12c-4 4-8 0-4-4l1.5-1.5"/></svg> A link to keep & share</span></div>
+      </section>
+      <section class="discover" id="discover" aria-labelledby="discover-heading">
+        <div class="section-top"><div><div class="eyebrow section-eyebrow">A LITTLE LESS NOISE. A LITTLE MORE KNOWLEDGE.</div><h2 id="discover-heading">Recently transcribed<span class="small-star">✳</span></h2></div><a class="text-link" href="#browse-tabs" id="browse-all">Explore the library <span>↗</span></a></div>
+        <div class="browse-bar"><div class="browse-tabs" id="browse-tabs" role="tablist" aria-label="Browse transcripts"><button class="active" role="tab" aria-selected="true" id="latest-tab" aria-controls="browse-content" data-view="latest">Latest</button><button role="tab" aria-selected="false" id="creators-tab" aria-controls="browse-content" tabindex="-1" data-view="creators">Creators</button><button role="tab" aria-selected="false" id="topics-tab" aria-controls="browse-content" tabindex="-1" data-view="topics">Topics</button></div><div class="browse-note"><span class="tiny-dot"></span><span>Good conversations, in good company.</span></div></div>
+        <div id="browse-content" role="tabpanel" aria-labelledby="latest-tab" tabindex="0"></div>
+        <div class="library-bottom"><span id="library-caption">A few handpicked reads to get you started.</span><button class="text-link" id="more-button">More to explore <span>↓</span></button></div>
+      </section>
+      <section class="workflow-section" aria-labelledby="workflow-heading"><div class="workflow-intro"><span class="eyebrow">FROM PLAY TO PAGE</span><h2 id="workflow-heading">A better way<br>to take it all in.</h2><p>For the curious minds, the note-takers,<br>and the “I’ll come back to this” people.</p></div><div class="workflow-step"><span class="step-number">01 /</span><h3>Find something good.</h3><p>A conversation, a lecture, a new perspective. Drop in the YouTube link.</p></div><div class="workflow-step"><span class="step-number">02 /</span><h3>Get to the good parts.</h3><p>A readable transcript and the key ideas, all in one quiet place.</p></div><div class="workflow-step"><span class="step-number">03 /</span><h3>Make it yours.</h3><p>Copy a thought. Download the full text. Send a little knowledge someone’s way.</p></div></section>
+      <section class="agent-banner"><div class="agent-symbol" aria-hidden="true">[<span>↗</span>]</div><div><h3>Your workflow. Your way.</h3><p>Made for humans. Ready for agents. Bring transcribe into the tools you already use.</p></div><button class="text-link" data-open="api-dialog">Meet the API <span>↗</span></button></section>
+    </main>
+    <footer><a class="wordmark" href="/">transcribe<span class="brand-dot">.</span></a><span>A little more meaning. A little less screen time.</span><div><button data-open="about-dialog">About</button><button data-open="privacy-dialog">Privacy</button><span>© <span id="year">2026</span> transcribe</span></div></footer>
+  </div>
+  <dialog id="reader-dialog" class="reader-dialog" aria-labelledby="reader-title"><div class="dialog-top"><a class="wordmark" href="/">transcribe<span class="brand-dot">.</span></a><button class="close-button" data-close aria-label="Close transcript">✕</button></div><div id="reader-content"></div></dialog>
+  <dialog id="how-dialog" class="info-dialog" aria-labelledby="how-title"><button class="close-button" data-close aria-label="Close">✕</button><span class="eyebrow">FROM PLAY TO PAGE</span><h2 id="how-title">Less watching.<br>More understanding.</h2><ol class="how-list"><li><strong>Paste a YouTube link.</strong><p>Choose a public video up to 90 minutes with available captions.</p></li><li><strong>Find the words worth keeping.</strong><p>Read the timestamped transcript and a short, extractive summary of its key ideas.</p></li><li><strong>Take it with you.</strong><p>Copy, download a text file or PDF, or share a permanent link. No account needed.</p></li></ol><button class="primary-button" id="how-start">Try it for yourself <span>↗</span></button></dialog>
+  <dialog id="api-dialog" class="info-dialog api-dialog" aria-labelledby="api-title"><button class="close-button" data-close aria-label="Close">✕</button><span class="eyebrow">BUILT FOR YOUR WORKFLOW</span><h2 id="api-title">A little less manual.</h2><p>Give your tools and agents the same transcript, summary, and shareable link.</p><div class="code-label">POST /api/transcribe <button id="copy-api">Copy example</button></div><pre id="api-code"></pre><p class="api-detail">Send a public YouTube URL with captions (up to 90 minutes). Returns <code>id</code>, <code>title</code>, <code>summary</code>, <code>segments</code>, and <code>permalink</code>. This instance supports 3 concurrent requests.</p><div class="api-endpoints"><span>GET /api/transcripts/:id</span><small>Retrieve a saved transcript</small><span>GET /api/transcripts/:id/pdf</span><small>Download a PDF</small></div></dialog>
+  <dialog id="about-dialog" class="info-dialog" aria-labelledby="about-title"><button class="close-button" data-close aria-label="Close">✕</button><span class="eyebrow">A NOTE FROM TRANSCRIBE</span><h2 id="about-title">Good ideas travel.</h2><p>transcribe makes video a little easier to read, revisit, and share. A quiet workspace for people who like to learn.</p><p>We turn available YouTube captions into readable, timestamped text and a short extractive summary. Captions may contain mistakes; check the original video when accuracy matters.</p><p>The reading room includes original editorial samples so you can explore the experience.</p></dialog>
+  <dialog id="privacy-dialog" class="info-dialog" aria-labelledby="privacy-title"><button class="close-button" data-close aria-label="Close">✕</button><span class="eyebrow">KEEPING THINGS SIMPLE</span><h2 id="privacy-title">Your words, clearly.</h2><p>No account, advertising cookies, or analytics are required. Submitted video links are sent to YouTube to retrieve available captions.</p><p>Generated transcripts are stored on this server and can be read by anyone with their shareable link. Don’t submit private or sensitive content. This browser remembers your recent transcripts.</p><p>Clear your local history below. This removes browser history only; saved server links remain available.</p><button class="outline-button" id="clear-history">Clear my local history</button></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
